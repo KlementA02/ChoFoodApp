@@ -1,6 +1,8 @@
 import 'package:bike_delivery_app/custom_shape/custom_shape.dart';
+import 'package:bike_delivery_app/screens/navigation_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -70,7 +72,9 @@ class LoginScreen extends StatelessWidget {
                         SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Get.to(const NavigationPage());
+                              },
                               child: const Padding(
                                 padding: EdgeInsets.all(8.0),
                                 child: Text('Sign In'),

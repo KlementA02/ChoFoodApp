@@ -1,4 +1,3 @@
-import 'package:bike_delivery_app/screens/homepage.dart';
 import 'package:bike_delivery_app/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const LoginScreen(),
     );
   }
 }
