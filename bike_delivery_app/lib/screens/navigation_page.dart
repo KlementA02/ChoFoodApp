@@ -1,4 +1,6 @@
 import 'package:bike_delivery_app/screens/homepage.dart';
+import 'package:bike_delivery_app/screens/settings_page.dart';
+import 'package:bike_delivery_app/screens/store_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,8 +22,8 @@ class NavigationPage extends StatelessWidget {
             NavigationDestination(icon: Icon(Icons.house), label: 'Home'),
             NavigationDestination(icon: Icon(Icons.shop), label: 'Store'),
             NavigationDestination(
-                icon: Icon(Icons.favorite), label: 'Wishlist'),
-            NavigationDestination(icon: Icon(Icons.person), label: 'Profile')
+                icon: Icon(Icons.shopping_cart), label: 'Orders'),
+            NavigationDestination(icon: Icon(Icons.person), label: 'Settings')
           ],
         ),
       ),
@@ -37,14 +39,10 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomePage(),
-    Container(
-      color: Colors.red,
-    ),
+    const StorePage(),
     Container(
       color: Colors.indigo,
     ),
-    Container(
-      color: Colors.blue,
-    ),
+    const SettingsPage(),
   ];
 }

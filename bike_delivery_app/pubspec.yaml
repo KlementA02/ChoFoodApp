@@ -39,6 +39,7 @@ dependencies:
   get: ^4.6.5
   font_awesome_flutter: ^10.7.0
   get_secure_storage: ^1.0.4
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
