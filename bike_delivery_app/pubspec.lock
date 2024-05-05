@@ -48,7 +48,7 @@ packages:
       sha256: ee67cb0715911d28db6bf4af1026078bd6f0128b07a5f66fb2ed94ec6783c09a
       url: "https://pub.dev"
     source: hosted
-    version: "1.17.1"
+    version: "1.18.0"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -106,7 +106,7 @@ packages:
       sha256: e4e7335ede17452b391ed3b2ede016545706c01a02292a6c97619705e7d2a85e
       url: "https://pub.dev"
     source: hosted
-    version: "4.6.5"
+    version: "4.6.6"
   iconsax:
     dependency: "direct main"
     description:
@@ -178,7 +178,7 @@ packages:
       sha256: "087ce49c3f0dc39180befefc60fdb4acd8f8620e5682fe2476afd0b3688bb4af"
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.3"
+    version: "1.9.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -231,7 +231,7 @@ packages:
       sha256: "5c2f730018264d276c20e4f1503fd1308dfbbae39ec8ee63c5236311ac06954b"
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.1"
+    version: "0.6.1"
   vector_math:
     dependency: transitive
     description:
@@ -240,5 +240,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  vm_service:
+    dependency: transitive
+    description:
+      name: vm_service
+      sha256: b3d56ff4341b8f182b96aceb2fa20e3dcb336b9f867bc0eafc0de10f1048e957
+      url: "https://pub.dev"
+    source: hosted
+    version: "13.0.0"
 sdks:
-  dart: ">=3.0.6 <4.0.0"
+  dart: ">=3.2.0-0 <4.0.0"
+<<<<<<< Updated upstream
+  flutter: ">=3.13.0"
+=======
+>>>>>>> Stashed changes
