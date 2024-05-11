@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746755032028",
+    "project_id": "chofoodapp",
+    "storage_bucket": "chofoodapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746755032028:android:b9d541597a2cb07f90c519",
+        "android_client_info": {
+          "package_name": "com.example.bike_delivery_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdFzD2fRn_hRZjRO-tCqlFEGHQRxXy83g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

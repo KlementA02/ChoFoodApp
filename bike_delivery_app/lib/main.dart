@@ -1,10 +1,18 @@
 import 'package:bike_delivery_app/screens/login_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
 import 'Themes/theme.dart';
 
 void main() {
+  Firebase.initializeApp(
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyCdFzD2fRn_hRZjRO-tCqlFEGHQRxXy83g",
+          appId: '1:746755032028:android:b9d541597a2cb07f90c519',
+          messagingSenderId: '746755032028',
+          projectId: "chofoodapp"));
+
   runApp(const MyApp());
 }
 
