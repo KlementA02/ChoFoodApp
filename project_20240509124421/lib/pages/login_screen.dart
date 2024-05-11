@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
-//import 'package:flutter_app/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -304,17 +303,22 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  child: Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.fromLTRB(0, 17, 0, 17),
-                    child: Center(
-                      child: Text(
-                        'Sign In',
-                        style: GoogleFonts.getFont(
-                          'Poppins',
-                          fontWeight: FontWeight.w600,
-                          fontSize: 17,
-                          color: const Color(0xFF373737),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/home');
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.fromLTRB(0, 17, 0, 17),
+                      child: Center(
+                        child: Text(
+                          'Sign In',
+                          style: GoogleFonts.getFont(
+                            'Poppins',
+                            fontWeight: FontWeight.w600,
+                            fontSize: 17,
+                            color: const Color(0xFF373737),
+                          ),
                         ),
                       ),
                     ),
