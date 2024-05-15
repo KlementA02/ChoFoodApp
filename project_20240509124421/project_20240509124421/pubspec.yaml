@@ -1,0 +1,190 @@
+name: flutter_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.2.1
+
+  flutter_svg: any
+  smooth_page_indicator: ^1.1.0
+  shared_preferences: ^2.2.3
+  flutter_native_splash: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  color: "#FFFFFF"
+  image: assets/images/file1.jpg
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/images/vector_4.jpeg
+  - assets/vectors/group_2_x2.svg
+  - assets/vectors/wifi_1_x2.svg
+  - assets/vectors/cellular_connection_4_x2.svg
+  - assets/vectors/vector_44_x2.svg
+  - assets/vectors/vector_34_x2.svg
+  - assets/vectors/battery_11_x2.svg
+  - assets/images/vector_4.jpeg
+  - assets/vectors/vector_3_x2.svg
+  - assets/vectors/battery_6_x2.svg
+  - assets/vectors/flat_color_iconsgoogle_x2.svg
+  - assets/vectors/cellular_connection_8_x2.svg
+  - assets/vectors/vector_10_x2.svg
+  - assets/vectors/group_3_x2.svg
+  - assets/vectors/wifi_6_x2.svg
+  - assets/vectors/vector_41_x2.svg
+  - assets/images/rectangle_9.jpeg
+  - assets/images/rectangle_14.jpeg
+  - assets/vectors/vector_30_x2.svg
+  - assets/vectors/plus_square_2_x2.svg
+  - assets/vectors/menu_1_x2.svg
+  - assets/vectors/vector_31_x2.svg
+  - assets/vectors/plus_square_x2.svg
+  - assets/vectors/vector_32_x2.svg
+  - assets/vectors/group_x2.svg
+  - assets/vectors/battery_12_x2.svg
+  - assets/vectors/vector_34_x2.svg
+  - assets/vectors/vector_13_x2.svg
+  - assets/vectors/cellular_connection_10_x2.svg
+  - assets/vectors/wifi_4_x2.svg
+  - assets/images/rectangle_22.jpeg
+  - assets/images/rectangle_24.jpeg
+  - assets/images/rectangle_28.jpeg
+  - assets/images/rectangle_14.jpeg
+  - assets/images/rectangle_9.jpeg
+  - assets/images/rectangle_26.jpeg
+  - assets/vectors/vector_7_x2.svg
+  - assets/vectors/ionoptions_outline_x2.svg
+  - assets/vectors/plus_square_8_x2.svg
+  - assets/vectors/battery_8_x2.svg
+  - assets/vectors/wifi_5_x2.svg
+  - assets/vectors/cellular_connection_9_x2.svg
+  - assets/vectors/menu_4_x2.svg
+  - assets/vectors/vector_37_x2.svg
+  - assets/vectors/vector_2_x2.svg
+  - assets/vectors/plus_square_1_x2.svg
+  - assets/vectors/plus_square_9_x2.svg
+  - assets/vectors/vector_16_x2.svg
+  - assets/images/rectangle_9.jpeg
+  - assets/images/rectangle_22.jpeg
+  - assets/images/rectangle_14.jpeg
+  - assets/images/rectangle_24.jpeg
+  - assets/images/rectangle_26.jpeg
+  - assets/images/rectangle_28.jpeg
+  - assets/images/file1.jpg
+  - assets/vectors/icons_x2.svg
+  - assets/vectors/menu_x2.svg
+  - assets/vectors/cellular_connection_11_x2.svg
+  - assets/vectors/plus_square_6_x2.svg
+  - assets/vectors/plus_square_4_x2.svg
+  - assets/vectors/battery_4_x2.svg
+  - assets/vectors/vector_18_x2.svg
+  - assets/vectors/vector_9_x2.svg
+  - assets/vectors/vector_26_x2.svg
+  - assets/vectors/wifi_10_x2.svg
+  - assets/vectors/vector_8_x2.svg
+  - assets/vectors/ionoptions_outline_1_x2.svg
+  - assets/vectors/plus_square_10_x2.svg
+  - assets/images/rectangle_10.jpeg
+  - assets/images/rectangle_30.png
+  - assets/vectors/cellular_connection_2_x2.svg
+  - assets/vectors/container_1_x2.svg
+  - assets/vectors/wifi_2_x2.svg
+  - assets/vectors/vector_35_x2.svg
+  - assets/vectors/vector_1_x2.svg
+  - assets/vectors/battery_9_x2.svg
+  - assets/vectors/vector_24_x2.svg
+  - assets/vectors/vector_29_x2.svg
+  - assets/vectors/vector_6_x2.svg
+  - assets/vectors/vector_11_x2.svg
+  - assets/vectors/menu_5_x2.svg
+  - assets/vectors/battery_x2.svg
+  - assets/vectors/cellular_connection_1_x2.svg
+  - assets/vectors/wifi_3_x2.svg
+  - assets/images/vector_4.jpeg
+  - assets/vectors/popcorn_1_x2.svg
+  - assets/vectors/vector_32_x2.svg
+  - assets/vectors/wifi_12_x2.svg
+  - assets/vectors/cellular_connection_12_x2.svg
+  - assets/vectors/battery_3_x2.svg
+  - assets/vectors/vector_42_x2.svg
+  - assets/vectors/wifi_x2.svg
+  - assets/vectors/battery_7_x2.svg
+  - assets/vectors/cellular_connection_7_x2.svg
+  - assets/images/vector_4.jpeg
+  - assets/vectors/wifi_11_x2.svg
+  - assets/vectors/battery_1_x2.svg
+  - assets/vectors/cellular_connection_5_x2.svg
+  - assets/vectors/restaurant_1_x2.svg
+  - assets/vectors/container_x2.svg
+  - assets/vectors/wifi_7_x2.svg
+  - assets/vectors/group_1_x2.svg
+  - assets/vectors/battery_10_x2.svg
+  - assets/vectors/cellular_connection_x2.svg
+  - assets/images/rectangle_11.jpeg
+  - assets/images/rectangle_14.jpeg
+  - assets/images/rectangle_9.jpeg
+  - assets/images/rectangle_26.jpeg
+  - assets/images/rectangle_91.jpeg
+  - assets/images/rectangle_22.jpeg
+  - assets/images/vector_4.jpeg
+  - assets/vectors/group_22_x2.svg
+  - assets/vectors/vector_17_x2.svg
+  - assets/vectors/vector_31_x2.svg
+  - assets/vectors/vector_21_x2.svg
+  - assets/vectors/battery_2_x2.svg
+  - assets/vectors/vector_35_x2.svg
+  - assets/vectors/ionoptions_outline_2_x2.svg
+  - assets/vectors/wifi_9_x2.svg
+  - assets/vectors/vector_28_x2.svg
+  - assets/vectors/vector_5_x2.svg
+  - assets/vectors/vector_22_x2.svg
+  - assets/vectors/menu_2_x2.svg
+  - assets/vectors/vector_36_x2.svg
+  - assets/vectors/vector_x2.svg
+  - assets/vectors/vector_23_x2.svg
+  - assets/vectors/group_24_x2.svg
+  - assets/vectors/vector_27_x2.svg
+  - assets/vectors/ionpizza_outline_x2.svg
+  - assets/vectors/group_23_x2.svg
+  - assets/vectors/vector_20_x2.svg
+  - assets/vectors/vector_15_x2.svg
+  - assets/vectors/vector_12_x2.svg
+  - assets/vectors/vector_38_x2.svg
+  - assets/vectors/cellular_connection_3_x2.svg
+  - assets/vectors/vector_43_x2.svg
+  - assets/images/rectangle_22.jpeg
+  - assets/images/rectangle_24.jpeg
+  - assets/images/rectangle_14.jpeg
+  - assets/vectors/vector_14_x2.svg
+  - assets/vectors/wifi_8_x2.svg
+  - assets/vectors/menu_3_x2.svg
+  - assets/vectors/plus_square_3_x2.svg
+  - assets/vectors/vector_25_x2.svg
+  - assets/vectors/vector_3_x2.svg
+  - assets/vectors/battery_5_x2.svg
+  - assets/vectors/vector_4_x2.svg
+  - assets/vectors/vector_19_x2.svg
+  - assets/vectors/group_241_x2.svg
+  - assets/vectors/cellular_connection_6_x2.svg
+  - assets/vectors/vector_33_x2.svg
+  - assets/vectors/vector_33_x2.svg
+  - assets/vectors/plus_square_7_x2.svg
+  - assets/vectors/plus_square_5_x2.svg
+
