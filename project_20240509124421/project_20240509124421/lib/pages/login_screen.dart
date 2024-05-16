@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/home.dart';
+import 'package:flutter_app/pages/page_view_nav.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -169,7 +169,7 @@ class LoginScreen extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context)
                               .pushReplacement(MaterialPageRoute(
-                            builder: (context) => const Home(),
+                            builder: (context) => const PageViewNavigator(),
                           ));
                         },
                         style: ElevatedButton.styleFrom(

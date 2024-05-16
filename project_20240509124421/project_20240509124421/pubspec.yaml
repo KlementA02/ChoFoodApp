@@ -103,6 +103,9 @@ flutter:
   - assets/vectors/plus_square_10_x2.svg
   - assets/images/rectangle_10.jpeg
   - assets/images/rectangle_30.png
+  - assets/images/file2.png
+  - assets/images/file3.jpg
+  - assets/images/file4.png
   - assets/vectors/cellular_connection_2_x2.svg
   - assets/vectors/container_1_x2.svg
   - assets/vectors/wifi_2_x2.svg
