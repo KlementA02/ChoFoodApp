@@ -385,7 +385,7 @@ class Added extends StatelessWidget {
                                                                   15),
                                                         ),
                                                       ),
-                                                      child: Container(
+                                                      child: const SizedBox(
                                                         width: 79,
                                                         height: 28,
                                                       ),
@@ -521,7 +521,7 @@ class Added extends StatelessWidget {
                                                 ),
                                               ),
                                             ),
-                                            child: Container(
+                                            child: const SizedBox(
                                               width: 90,
                                               height: 90,
                                             ),
@@ -659,7 +659,7 @@ class Added extends StatelessWidget {
                                                                   15),
                                                         ),
                                                       ),
-                                                      child: Container(
+                                                      child: const SizedBox(
                                                         width: 79,
                                                         height: 28,
                                                       ),
@@ -796,7 +796,7 @@ class Added extends StatelessWidget {
                                                 ),
                                               ),
                                             ),
-                                            child: Container(
+                                            child: const SizedBox(
                                               width: 90,
                                               height: 90,
                                             ),
@@ -937,7 +937,7 @@ class Added extends StatelessWidget {
                                                                   15),
                                                         ),
                                                       ),
-                                                      child: Container(
+                                                      child: const SizedBox(
                                                         width: 79,
                                                         height: 28,
                                                       ),
@@ -1072,7 +1072,7 @@ class Added extends StatelessWidget {
                                                 ),
                                               ),
                                             ),
-                                            child: Container(
+                                            child: const SizedBox(
                                               width: 90,
                                               height: 90,
                                             ),
@@ -1297,7 +1297,7 @@ class Added extends StatelessWidget {
                             decoration: const BoxDecoration(
                               color: Color(0xFF373737),
                             ),
-                            child: Container(
+                            child: const SizedBox(
                               width: 360,
                               height: 663,
                             ),

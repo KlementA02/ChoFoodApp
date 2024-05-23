@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Loader extends StatelessWidget {
+class Loader extends StatefulWidget {
   const Loader({super.key});
 
+  @override
+  State<Loader> createState() => _LoaderState();
+}
+
+class _LoaderState extends State<Loader> {
   @override
   Widget build(BuildContext context) {
     return Container(

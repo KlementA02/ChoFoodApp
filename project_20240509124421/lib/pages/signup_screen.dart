@@ -3,13 +3,12 @@ import 'dart:math';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/page_view_nav.dart';
-import 'package:flutter_app/pages/signup_screen.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -152,7 +151,6 @@ class LoginScreen extends StatelessWidget {
                                   border: Border.all(
                                       width: 1, color: Colors.black)),
                               child: TextFormField(
-                                obscureText: true,
                                 decoration: const InputDecoration(
                                   border: InputBorder.none,
                                   prefixIcon: Icon(Icons.password),
@@ -182,7 +180,7 @@ class LoginScreen extends StatelessWidget {
                             elevation: 0,
                             backgroundColor: const Color(0xFFFFD200)),
                         child: Text(
-                          'Sign In',
+                          'Sign Up',
                           style: GoogleFonts.getFont(
                             'Poppins',
                             fontWeight: FontWeight.w600,
@@ -205,7 +203,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                         children: [
                           TextSpan(
-                            text: "Don't have an account?",
+                            text: "Already have an account?",
                             style: GoogleFonts.getFont(
                               'Poppins',
                               fontWeight: FontWeight.w400,
@@ -224,14 +222,10 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                            text: 'Register',
+                            text: 'Sign In',
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            const SignupScreen()));
+                                Navigator.of(context).pop();
                               },
                             style: GoogleFonts.getFont(
                               'Poppins',

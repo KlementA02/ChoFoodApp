@@ -1,30 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/login_screen.dart';
+import 'package:flutter_app/pages/onboarding_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-void main() => runApp(const MyApp());
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final prefs = await SharedPreferences.getInstance();
+  final showHome = prefs.getBool('showHome') ?? false;
+  runApp(MyApp(showHome: showHome));
+}
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final bool showHome;
+
+  const MyApp({super.key, required this.showHome});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter App',
-      home: Scaffold(
-        //body: Added(),
-        // body: Cart(),
-        // body: Components(),
-        // body: Home(),
-        //body: Loader(),
-        body: LoginScreen(),
-        // body: RestaurentDetail(),
-        // body: RestaurentMenu(),
-        // body: SpashScreen01(),
-        //body: SpashScreen02(),
-        //body: SpashScreen03(),
-        // body: Success(),
-        // body: Tracking(),
-      ),
+      home: showHome ? const LoginScreen() : const OnBoardingPageState(),
     );
   }
 }

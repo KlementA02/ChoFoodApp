@@ -63,102 +63,102 @@ class SpashScreen01 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Container(
-                      margin: const EdgeInsets.fromLTRB(0, 0, 20.8, 110),
-                      child: SizedBox(
-                        width: 50,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFFFD200),
-                                borderRadius: BorderRadius.circular(5),
-                              ),
-                              child: Container(
-                                width: 10,
-                                height: 10,
-                              ),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFC4C4C4),
-                                borderRadius: BorderRadius.circular(5),
-                              ),
-                              child: Container(
-                                width: 10,
-                                height: 10,
-                              ),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFC4C4C4),
-                                borderRadius: BorderRadius.circular(5),
-                              ),
-                              child: Container(
-                                width: 10,
-                                height: 10,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.fromLTRB(118, 0, 0, 0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.fromLTRB(0, 0, 15.2, 0),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
-                              color: const Color(0xFFFFFFFF),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Color(0x1A000000),
-                                  offset: Offset(0, 5),
-                                  blurRadius: 15,
-                                ),
-                              ],
-                            ),
-                            child: Container(
-                              width: 86,
-                              padding: const EdgeInsets.fromLTRB(0, 13, 0, 13),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(12),
-                                  border: Border.all(
-                                      width: 1, color: Colors.black)),
-                              child: Center(
-                                child: Text(
-                                  'Next',
-                                  style: GoogleFonts.getFont(
-                                    'Poppins',
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 16,
-                                    color: const Color(0xFF373737),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.fromLTRB(0, 12, 0, 14),
-                            child: Text(
-                              'Skip',
-                              style: GoogleFonts.getFont(
-                                'Poppins',
-                                fontWeight: FontWeight.w500,
-                                fontSize: 16,
-                                color: const Color(0xFF373737),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+                    // Container(
+                    //   margin: const EdgeInsets.fromLTRB(0, 0, 20.8, 110),
+                    //   child: SizedBox(
+                    //     width: 50,
+                    //     child: Row(
+                    //       mainAxisAlignment: MainAxisAlignment.start,
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         Container(
+                    //           decoration: BoxDecoration(
+                    //             color: const Color(0xFFFFD200),
+                    //             borderRadius: BorderRadius.circular(5),
+                    //           ),
+                    //           child: Container(
+                    //             width: 10,
+                    //             height: 10,
+                    //           ),
+                    //         ),
+                    //         Container(
+                    //           decoration: BoxDecoration(
+                    //             color: const Color(0xFFC4C4C4),
+                    //             borderRadius: BorderRadius.circular(5),
+                    //           ),
+                    //           child: Container(
+                    //             width: 10,
+                    //             height: 10,
+                    //           ),
+                    //         ),
+                    //         Container(
+                    //           decoration: BoxDecoration(
+                    //             color: const Color(0xFFC4C4C4),
+                    //             borderRadius: BorderRadius.circular(5),
+                    //           ),
+                    //           child: Container(
+                    //             width: 10,
+                    //             height: 10,
+                    //           ),
+                    //         ),
+                    //       ],
+                    //     ),
+                    //   ),
+                    // ),
+                    // Container(
+                    //   margin: const EdgeInsets.fromLTRB(118, 0, 0, 0),
+                    //   child: Row(
+                    //     mainAxisAlignment: MainAxisAlignment.start,
+                    //     crossAxisAlignment: CrossAxisAlignment.start,
+                    //     children: [
+                    //       Container(
+                    //         margin: const EdgeInsets.fromLTRB(0, 0, 15.2, 0),
+                    //         decoration: BoxDecoration(
+                    //           borderRadius: BorderRadius.circular(15),
+                    //           color: const Color(0xFFFFFFFF),
+                    //           boxShadow: const [
+                    //             BoxShadow(
+                    //               color: Color(0x1A000000),
+                    //               offset: Offset(0, 5),
+                    //               blurRadius: 15,
+                    //             ),
+                    //           ],
+                    //         ),
+                    //         child: Container(
+                    //           width: 86,
+                    //           padding: const EdgeInsets.fromLTRB(0, 13, 0, 13),
+                    //           decoration: BoxDecoration(
+                    //               borderRadius: BorderRadius.circular(12),
+                    //               border: Border.all(
+                    //                   width: 1, color: Colors.black)),
+                    //           child: Center(
+                    //             child: Text(
+                    //               'Next',
+                    //               style: GoogleFonts.getFont(
+                    //                 'Poppins',
+                    //                 fontWeight: FontWeight.w500,
+                    //                 fontSize: 16,
+                    //                 color: const Color(0xFF373737),
+                    //               ),
+                    //             ),
+                    //           ),
+                    //         ),
+                    //       ),
+                    //       Container(
+                    //         margin: const EdgeInsets.fromLTRB(0, 12, 0, 14),
+                    //         child: Text(
+                    //           'Skip',
+                    //           style: GoogleFonts.getFont(
+                    //             'Poppins',
+                    //             fontWeight: FontWeight.w500,
+                    //             fontSize: 16,
+                    //             color: const Color(0xFF373737),
+                    //           ),
+                    //         ),
+                    //       ),
+                    //     ],
+                    //   ),
+                    // ),
                   ],
                 ),
               ),

@@ -35,16 +35,14 @@ class Tracking extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
-                            child: Text(
-                              '9:41',
-                              style: GoogleFonts.getFont(
-                                'Roboto Condensed',
-                                fontWeight: FontWeight.w600,
-                                fontSize: 15,
-                                letterSpacing: -0.3,
-                                color: const Color(0xFF000000),
-                              ),
+                          Text(
+                            '9:41',
+                            style: GoogleFonts.getFont(
+                              'Roboto Condensed',
+                              fontWeight: FontWeight.w600,
+                              fontSize: 15,
+                              letterSpacing: -0.3,
+                              color: const Color(0xFF000000),
                             ),
                           ),
                           Container(

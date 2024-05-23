@@ -14,10 +14,24 @@ dependencies:
   google_fonts: ^6.2.1
 
   flutter_svg: any
+  smooth_page_indicator: ^1.1.0
+  shared_preferences: ^2.2.3
+  flutter_native_splash: ^2.4.0
+  image_picker: ^1.1.1
+  device_info_plus: ^10.1.0
+  permission_handler: ^11.3.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  color: "#FFFFFF"
+  image: assets/images/file1.jpg
 
 flutter:
   uses-material-design: true
@@ -76,6 +90,7 @@ flutter:
   - assets/images/rectangle_24.jpeg
   - assets/images/rectangle_26.jpeg
   - assets/images/rectangle_28.jpeg
+  - assets/images/file1.jpg
   - assets/vectors/icons_x2.svg
   - assets/vectors/menu_x2.svg
   - assets/vectors/cellular_connection_11_x2.svg
@@ -91,6 +106,9 @@ flutter:
   - assets/vectors/plus_square_10_x2.svg
   - assets/images/rectangle_10.jpeg
   - assets/images/rectangle_30.png
+  - assets/images/file2.png
+  - assets/images/file3.jpg
+  - assets/images/file4.png
   - assets/vectors/cellular_connection_2_x2.svg
   - assets/vectors/container_1_x2.svg
   - assets/vectors/wifi_2_x2.svg
