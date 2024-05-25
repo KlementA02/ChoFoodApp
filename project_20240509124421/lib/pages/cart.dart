@@ -7,48 +7,52 @@ class Cart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        color: Color(0xFFF6F6F6),
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const CartText(),
-          const LocationWidget(),
-          SizedBox(
-              height: MediaQuery.of(context).size.height * 0.35,
-              child: ListView(
-                shrinkWrap: true,
-                children: const [
-                  TakeoutWidget(),
-                  TakeoutWidget(),
-                  TakeoutWidget(),
-                ],
-              )),
-          Column(
+    return SafeArea(
+      child: SingleChildScrollView(
+        child: Container(
+          decoration: const BoxDecoration(
+            color: Color(0xFFF6F6F6),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const PromoCodeWidget(),
-              Container(
-                height: MediaQuery.of(context).size.width * 0.67,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/images/file4.png"),
-                      fit: BoxFit.fill),
-                ),
-                child: const Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    CheckoutText(),
-                    CheckOutButton(),
-                    SizedBox(height: 7)
-                  ],
-                ),
+              const CartText(),
+              const LocationWidget(),
+              SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.35,
+                  child: ListView(
+                    shrinkWrap: true,
+                    children: const [
+                      TakeoutWidget(),
+                      TakeoutWidget(),
+                      TakeoutWidget(),
+                    ],
+                  )),
+              Column(
+                children: [
+                  const PromoCodeWidget(),
+                  Container(
+                    height: MediaQuery.of(context).size.width * 0.67,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/images/file4.png"),
+                          fit: BoxFit.fill),
+                    ),
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        CheckoutText(),
+                        CheckOutButton(),
+                        SizedBox(height: 7)
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
-        ],
+        ),
       ),
     );
   }
