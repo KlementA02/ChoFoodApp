@@ -11,118 +11,83 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Container(
-            decoration: const BoxDecoration(
-              color: Color(0xFFF6F6F6),
-            ),
-            child: Stack(
-              children: [
-                Positioned(
-                  right: 0,
-                  top: 0,
-                  child: Transform.rotate(
-                    angle: pi,
-                    child: SizedBox(
-                      width: 360,
-                      height: 210, //237
-                      child: SvgPicture.asset(
-                        'assets/vectors/vector_35_x2.svg',
-                      ),
-                    ),
+      body: Container(
+        decoration: const BoxDecoration(
+          color: Color(0xFFF6F6F6),
+        ),
+        child: Stack(
+          children: [
+            Positioned(
+              right: 0,
+              top: 0,
+              child: Transform.rotate(
+                angle: pi,
+                child: SizedBox(
+                  width: 360,
+                  height: 237, //210
+                  child: SvgPicture.asset(
+                    'assets/vectors/vector_35_x2.svg',
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.fromLTRB(0, 14, 0, 0),
-                  child: Stack(
-                    clipBehavior: Clip.none,
-                    children: [
-                      SizedBox(
-                        width: 430,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              margin:
-                                  const EdgeInsets.fromLTRB(35.2, 0, 35.2, 34),
-                              child: const Align(
-                                alignment: Alignment.topLeft,
-                                child: SizedBox(
-                                  width: 310.5,
-                                ),
-                              ),
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.fromLTRB(0, 14, 0, 0),
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  SizedBox(
+                    width: 430,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.fromLTRB(35.2, 0, 35.2, 34),
+                          child: const Align(
+                            alignment: Alignment.topLeft,
+                            child: SizedBox(
+                              width: 310.5,
                             ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(30, 0, 30, 76),
-                              child: Align(
-                                alignment: Alignment.topLeft,
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.fromLTRB(30, 0, 30, 76),
+                          child: Align(
+                            alignment: Alignment.topLeft,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFFFFFF),
+                                borderRadius: BorderRadius.circular(15),
+                              ),
+                              child: SizedBox(
+                                width: 300,
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFFFFFFFF),
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: SizedBox(
-                                    width: 300,
-                                    child: Container(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          22, 16, 0, 15),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Container(
-                                            margin: const EdgeInsets.fromLTRB(
-                                                0, 5, 10, 4),
-                                            child: SizedBox(
-                                              width: 15,
-                                              height: 15,
-                                              child: SvgPicture.asset(
-                                                'assets/vectors/group_23_x2.svg',
-                                              ),
-                                            ),
-                                          ),
-                                          Text(
-                                            'Find your taste',
-                                            style: GoogleFonts.getFont(
-                                              'Poppins',
-                                              fontWeight: FontWeight.w400,
-                                              fontSize: 16,
-                                              color: const Color(0xFFBDBDBD),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(42, 0, 42, 34),
-                              child: Align(
-                                alignment: Alignment.topLeft,
-                                child: SizedBox(
-                                  width: 278,
+                                  padding:
+                                      const EdgeInsets.fromLTRB(22, 16, 0, 15),
                                   child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      const KTWidget(),
                                       Container(
                                         margin: const EdgeInsets.fromLTRB(
-                                            0, 4, 0, 6),
+                                            0, 5, 10, 4),
                                         child: SizedBox(
-                                          width: 24,
-                                          height: 24,
+                                          width: 15,
+                                          height: 15,
                                           child: SvgPicture.asset(
-                                            'assets/vectors/ionoptions_outline_2_x2.svg',
+                                            'assets/vectors/group_23_x2.svg',
                                           ),
+                                        ),
+                                      ),
+                                      Text(
+                                        'Find your taste',
+                                        style: GoogleFonts.getFont(
+                                          'Poppins',
+                                          fontWeight: FontWeight.w400,
+                                          fontSize: 16,
+                                          color: const Color(0xFFBDBDBD),
                                         ),
                                       ),
                                     ],
@@ -130,135 +95,160 @@ class Home extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            const CatWidget(),
-                            const CatWidgetTxt(),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(31, 0, 31, 11),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    'Nearest Restaurents',
-                                    style: GoogleFonts.getFont(
-                                      'Poppins',
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 18,
-                                      color: const Color(0xFF373737),
-                                    ),
-                                  ),
-                                  Text(
-                                    'View All',
-                                    style: GoogleFonts.getFont(
-                                      'Poppins',
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 12,
-                                      color: Colors.orange,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(30, 0, 0, 5),
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.fromLTRB(42, 0, 42, 34),
+                          child: Align(
+                            alignment: Alignment.topLeft,
+                            child: SizedBox(
+                              width: 278,
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  SizedBox(
-                                    width: 300,
-                                    height: 150,
-                                    child: ListView(
-                                      scrollDirection: Axis.horizontal,
-                                      children: const [
-                                        NStoreWidget(),
-                                        SizedBox(width: 8),
-                                        NStoreWidget(
-                                          imageName: "rectangle_11.jpeg",
-                                          name: "Chef        .",
-                                          rating: "4.7",
-                                        ),
-                                        SizedBox(width: 8),
-                                        NStoreWidget(
-                                          imageName: "rectangle_22.jpeg",
-                                          name: "Hannah's fries",
-                                          rating: "4.2",
-                                        ),
-                                        SizedBox(width: 8),
-                                        NStoreWidget(
-                                          imageName: "rectangle_28.jpeg",
-                                          name: "TOVET       .",
-                                          rating: "4.8",
-                                        ),
-                                      ],
+                                  const KTWidget(),
+                                  Container(
+                                    margin:
+                                        const EdgeInsets.fromLTRB(0, 4, 0, 6),
+                                    child: SizedBox(
+                                      width: 24,
+                                      height: 24,
+                                      child: SvgPicture.asset(
+                                        'assets/vectors/ionoptions_outline_2_x2.svg',
+                                      ),
                                     ),
                                   ),
                                 ],
                               ),
                             ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(31, 0, 31, 12),
-                              child: Align(
-                                alignment: Alignment.topLeft,
-                                child: Text(
-                                  'Popular Restaurents',
-                                  style: GoogleFonts.getFont(
-                                    'Poppins',
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 18,
-                                    color: const Color(0xFF373737),
-                                  ),
+                          ),
+                        ),
+                        const CatWidget(),
+                        const CatWidgetTxt(),
+                        Container(
+                          margin: const EdgeInsets.fromLTRB(31, 0, 31, 11),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Nearest Restaurents',
+                                style: GoogleFonts.getFont(
+                                  'Poppins',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 18,
+                                  color: const Color(0xFF373737),
                                 ),
                               ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(30, 0, 0, 5),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  SizedBox(
-                                    width: 300,
-                                    height: 150,
-                                    child: ListView(
-                                      scrollDirection: Axis.horizontal,
-                                      children: const [
-                                        NStoreWidget(
-                                          imageName: "rectangle_28.jpeg",
-                                          name: "TOVET       .",
-                                          rating: "4.8",
-                                        ),
-                                        SizedBox(width: 8),
-                                        NStoreWidget(),
-                                        SizedBox(width: 8),
-                                        NStoreWidget(
-                                          imageName: "rectangle_22.jpeg",
-                                          name: "Hannah's fries",
-                                          rating: "4.2",
-                                        ),
-                                        SizedBox(width: 8),
-                                        NStoreWidget(
-                                          imageName: "rectangle_11.jpeg",
-                                          name: "Chef        .",
-                                          rating: "4.7",
-                                        ),
-                                      ],
+                              Text(
+                                'View All',
+                                style: GoogleFonts.getFont(
+                                  'Poppins',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 12,
+                                  color: Colors.orange,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.fromLTRB(30, 0, 0, 5),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                width: 300,
+                                height: 150,
+                                child: ListView(
+                                  scrollDirection: Axis.horizontal,
+                                  children: const [
+                                    NStoreWidget(),
+                                    SizedBox(width: 8),
+                                    NStoreWidget(
+                                      imageName: "rectangle_11.jpeg",
+                                      name: "Chef        .",
+                                      rating: "4.7",
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(width: 8),
+                                    NStoreWidget(
+                                      imageName: "rectangle_22.jpeg",
+                                      name: "Hannah's fries",
+                                      rating: "4.2",
+                                    ),
+                                    SizedBox(width: 8),
+                                    NStoreWidget(
+                                      imageName: "rectangle_28.jpeg",
+                                      name: "TOVET       .",
+                                      rating: "4.8",
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.fromLTRB(31, 0, 31, 12),
+                          child: Align(
+                            alignment: Alignment.topLeft,
+                            child: Text(
+                              'Popular Restaurents',
+                              style: GoogleFonts.getFont(
+                                'Poppins',
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                color: const Color(0xFF373737),
                               ),
                             ),
-                          ],
+                          ),
                         ),
-                      ),
-                    ],
+                        Container(
+                          margin: const EdgeInsets.fromLTRB(30, 0, 0, 5),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                width: 300,
+                                height: 150,
+                                child: ListView(
+                                  scrollDirection: Axis.horizontal,
+                                  children: const [
+                                    NStoreWidget(
+                                      imageName: "rectangle_28.jpeg",
+                                      name: "TOVET       .",
+                                      rating: "4.8",
+                                    ),
+                                    SizedBox(width: 8),
+                                    NStoreWidget(),
+                                    SizedBox(width: 8),
+                                    NStoreWidget(
+                                      imageName: "rectangle_22.jpeg",
+                                      name: "Hannah's fries",
+                                      rating: "4.2",
+                                    ),
+                                    SizedBox(width: 8),
+                                    NStoreWidget(
+                                      imageName: "rectangle_11.jpeg",
+                                      name: "Chef        .",
+                                      rating: "4.7",
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );

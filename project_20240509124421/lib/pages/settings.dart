@@ -46,120 +46,116 @@ class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Transform.rotate(
-                angle: pi,
-                child: SizedBox(
-                  width: 360,
-                  height: 210, //237
-                  child: SvgPicture.asset(
-                    'assets/vectors/vector_35_x2.svg',
-                  ),
-                ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Transform.rotate(
+            angle: pi,
+            child: SizedBox(
+              width: 360,
+              height: 237, //210
+              child: SvgPicture.asset(
+                'assets/vectors/vector_35_x2.svg',
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                child: Row(
-                  children: [
-                    const SizedBox(width: 10),
-                    Center(
-                      child: Container(
-                        width: 64,
-                        height: 64,
-                        decoration: const BoxDecoration(shape: BoxShape.circle),
-                        child: Stack(
-                          children: [
-                            _image != null
-                                ? CircleAvatar(
-                                    radius: 72,
-                                    backgroundImage: MemoryImage(_image!),
-                                  )
-                                : const CircleAvatar(
-                                    radius: 72,
-                                    child: Icon(
-                                      Icons.person,
-                                      size: 24,
-                                    ),
-                                  ),
-                            Positioned(
-                              bottom: -16,
-                              left: 31,
-                              child: IconButton(
-                                onPressed: () async {
-                                  if (await _requestPermission(
-                                          Permission.storage) ==
-                                      true) {
-                                    showImagePicketOption(context);
-                                  } else {
-                                    const AlertDialog(
-                                      title: Text(
-                                          "Permission is needed to add pictures"),
-                                    );
-                                  }
-                                },
-                                icon: const Icon(
-                                  Icons.add_a_photo_outlined,
-                                  size: 20,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+            child: Row(
+              children: [
+                const SizedBox(width: 10),
+                Center(
+                  child: Container(
+                    width: 64,
+                    height: 64,
+                    decoration: const BoxDecoration(shape: BoxShape.circle),
+                    child: Stack(
+                      children: [
+                        _image != null
+                            ? CircleAvatar(
+                                radius: 72,
+                                backgroundImage: MemoryImage(_image!),
+                              )
+                            : const CircleAvatar(
+                                radius: 72,
+                                child: Icon(
+                                  Icons.person,
+                                  size: 24,
                                 ),
                               ),
-                            )
-                          ],
-                        ),
-                      ),
+                        Positioned(
+                          bottom: -16,
+                          left: 31,
+                          child: IconButton(
+                            onPressed: () async {
+                              if (await _requestPermission(
+                                      Permission.storage) ==
+                                  true) {
+                                showImagePicketOption(context);
+                              } else {
+                                const AlertDialog(
+                                  title: Text(
+                                      "Permission is needed to add pictures"),
+                                );
+                              }
+                            },
+                            icon: const Icon(
+                              Icons.add_a_photo_outlined,
+                              size: 20,
+                            ),
+                          ),
+                        )
+                      ],
                     ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('Klement Kofi', style: TextStyle(fontSize: 27)),
-                          Text('someone34@gmail.com',
-                              style: TextStyle(fontSize: 12)),
-                        ],
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
-              ),
-              const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Settings',
-                      style: TextStyle(fontSize: 36),
-                    ),
-                    SizedBox(height: 18),
-                    SettingTilesWidget(
-                      title: 'Privacy Policy',
-                      icon: Icons.shield_outlined,
-                    ),
-                    SizedBox(height: 9),
-                    SettingTilesWidget(
-                      title: 'Contact Us',
-                      icon: Icons.phone,
-                    ),
-                    SizedBox(height: 9),
-                    SettingTilesWidget(
-                      title: 'Log out',
-                      icon: Icons.exit_to_app,
-                    ),
-                    SizedBox(height: 9),
-                    SettingTilesWidget(
-                      title: 'Delete Account',
-                      icon: Icons.exit_to_app,
-                    ),
-                  ],
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Klement Kofi', style: TextStyle(fontSize: 27)),
+                      Text('someone34@gmail.com',
+                          style: TextStyle(fontSize: 12)),
+                    ],
+                  ),
                 ),
-              )
-            ],
+              ],
+            ),
           ),
-        ),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Settings',
+                  style: TextStyle(fontSize: 36),
+                ),
+                SizedBox(height: 18),
+                SettingTilesWidget(
+                  title: 'Privacy Policy',
+                  icon: Icons.shield_outlined,
+                ),
+                SizedBox(height: 9),
+                SettingTilesWidget(
+                  title: 'Contact Us',
+                  icon: Icons.phone,
+                ),
+                SizedBox(height: 9),
+                SettingTilesWidget(
+                  title: 'Log out',
+                  icon: Icons.exit_to_app,
+                ),
+                SizedBox(height: 9),
+                SettingTilesWidget(
+                  title: 'Delete Account',
+                  icon: Icons.exit_to_app,
+                ),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
